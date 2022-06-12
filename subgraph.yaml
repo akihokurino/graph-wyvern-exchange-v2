@@ -1,4 +1,4 @@
-specVersion: 0.0.1
+specVersion: 0.0.4
 schema:
   file: ./schema.graphql
 dataSources:
@@ -35,4 +35,4 @@ dataSources:
           handler: handleOwnershipRenounced
         - event: OwnershipTransferred(indexed address,indexed address)
           handler: handleOwnershipTransferred
-      file: ./src/wyvern-exchange-v-2.ts
+      file: ./src/mapping.ts
