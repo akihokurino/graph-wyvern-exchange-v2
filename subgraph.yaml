@@ -35,4 +35,4 @@ dataSources:
           handler: handleOwnershipRenounced
         - event: OwnershipTransferred(indexed address,indexed address)
           handler: handleOwnershipTransferred
-      file: ./src/mapping.ts
+      file: ./src/wyvern.ts
