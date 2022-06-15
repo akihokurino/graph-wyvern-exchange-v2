@@ -1,11 +1,11 @@
 type Order @entity {
   id: ID!
-  exchangeContractAddress: String
-  makerAddress: String
-  takerAddress: String
-  contractAddress: String
+  exchangeContractAddress: Bytes
+  makerAddress: Bytes
+  takerAddress: Bytes
+  contractAddress: Bytes
   saleSide: Int
   saleKind: Int
-  paymentTokenAddress: String
+  paymentTokenAddress: Bytes
   basePrice: BigInt
 }

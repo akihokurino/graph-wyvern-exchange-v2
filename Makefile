@@ -1,8 +1,8 @@
-gen:
-	npm run codegen
+gen-graph:
+	graph codegen
 
-build:
-	npm run build
+build-graph:
+	graph build
 
-deploy:
+deploy-graph:
 	graph deploy --product hosted-service akihokurino/wyvern

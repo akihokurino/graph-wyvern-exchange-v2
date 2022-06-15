@@ -42,71 +42,71 @@ export class Order extends Entity {
     this.set("id", Value.fromString(value));
   }
 
-  get exchangeContractAddress(): string | null {
+  get exchangeContractAddress(): Bytes | null {
     let value = this.get("exchangeContractAddress");
     if (!value || value.kind == ValueKind.NULL) {
       return null;
     } else {
-      return value.toString();
+      return value.toBytes();
     }
   }
 
-  set exchangeContractAddress(value: string | null) {
+  set exchangeContractAddress(value: Bytes | null) {
     if (!value) {
       this.unset("exchangeContractAddress");
     } else {
-      this.set("exchangeContractAddress", Value.fromString(<string>value));
+      this.set("exchangeContractAddress", Value.fromBytes(<Bytes>value));
     }
   }
 
-  get makerAddress(): string | null {
+  get makerAddress(): Bytes | null {
     let value = this.get("makerAddress");
     if (!value || value.kind == ValueKind.NULL) {
       return null;
     } else {
-      return value.toString();
+      return value.toBytes();
     }
   }
 
-  set makerAddress(value: string | null) {
+  set makerAddress(value: Bytes | null) {
     if (!value) {
       this.unset("makerAddress");
     } else {
-      this.set("makerAddress", Value.fromString(<string>value));
+      this.set("makerAddress", Value.fromBytes(<Bytes>value));
     }
   }
 
-  get takerAddress(): string | null {
+  get takerAddress(): Bytes | null {
     let value = this.get("takerAddress");
     if (!value || value.kind == ValueKind.NULL) {
       return null;
     } else {
-      return value.toString();
+      return value.toBytes();
     }
   }
 
-  set takerAddress(value: string | null) {
+  set takerAddress(value: Bytes | null) {
     if (!value) {
       this.unset("takerAddress");
     } else {
-      this.set("takerAddress", Value.fromString(<string>value));
+      this.set("takerAddress", Value.fromBytes(<Bytes>value));
     }
   }
 
-  get contractAddress(): string | null {
+  get contractAddress(): Bytes | null {
     let value = this.get("contractAddress");
     if (!value || value.kind == ValueKind.NULL) {
       return null;
     } else {
-      return value.toString();
+      return value.toBytes();
     }
   }
 
-  set contractAddress(value: string | null) {
+  set contractAddress(value: Bytes | null) {
     if (!value) {
       this.unset("contractAddress");
     } else {
-      this.set("contractAddress", Value.fromString(<string>value));
+      this.set("contractAddress", Value.fromBytes(<Bytes>value));
     }
   }
 
@@ -128,20 +128,20 @@ export class Order extends Entity {
     this.set("saleKind", Value.fromI32(value));
   }
 
-  get paymentTokenAddress(): string | null {
+  get paymentTokenAddress(): Bytes | null {
     let value = this.get("paymentTokenAddress");
     if (!value || value.kind == ValueKind.NULL) {
       return null;
     } else {
-      return value.toString();
+      return value.toBytes();
     }
   }
 
-  set paymentTokenAddress(value: string | null) {
+  set paymentTokenAddress(value: Bytes | null) {
     if (!value) {
       this.unset("paymentTokenAddress");
     } else {
-      this.set("paymentTokenAddress", Value.fromString(<string>value));
+      this.set("paymentTokenAddress", Value.fromBytes(<Bytes>value));
     }
   }
 

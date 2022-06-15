@@ -17,13 +17,13 @@ export function handleOrderApprovedPartOne(event: OrderApprovedPartOne): void {
   }
 
   // このExchangeCore Contractのaddress
-  entity.contractAddress = event.params.exchange.toHex();
+  entity.contractAddress = event.params.exchange;
   // Orderを作成したEOA
-  entity.makerAddress = event.params.maker.toHex();
+  entity.makerAddress = event.params.maker;
   // Orderを受け入れたEOA
-  entity.takerAddress = event.params.taker.toHex();
+  entity.takerAddress = event.params.taker;
   // 対象となるNFT Contract Address
-  entity.contractAddress = event.params.target.toHex();
+  entity.contractAddress = event.params.target;
   // Buy or Sell
   entity.saleSide = event.params.side;
   // FixedPrice or DutchAuction
@@ -41,7 +41,7 @@ export function handleOrderApprovedPartTwo(event: OrderApprovedPartTwo): void {
   }
 
   // 支払いに使われるERC20
-  entity.paymentTokenAddress = event.params.paymentToken.toHex();
+  entity.paymentTokenAddress = event.params.paymentToken;
   // BasePrice
   entity.basePrice = event.params.basePrice;
 
